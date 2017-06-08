@@ -223,7 +223,7 @@
                 var postcode = $("#postcode-text").val();
 
                 // RETRIEVE LAT & LONG
-                $.get("http://api.postcodes.io/postcodes/" + postcode.replace(' ', ''), function(data){
+                $.get("https://api.postcodes.io/postcodes/" + postcode.replace(' ', ''), function(data){
                     lat = data.result.latitude;
                     long = data.result.longitude;
 
